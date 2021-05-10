@@ -1,5 +1,40 @@
-.App {
+.header {
+  display: flex;
   text-align: center;
+  background-color: rgb(241, 237, 237);
+  height: 2em;
+  padding: .5em;
+  color: rgb(0, 0, 0);
+}
+
+.search-form {
+  margin-left: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar {
+  color: gray;
+  width: 18em;
+  margin-right: 1em;
+  border: 1px solid rgb(178, 175, 175);
+  border-radius: 5%;
+}
+
+.type-selector {
+  margin: 1em;
+  margin-top: .23em;
+  background-color: rgb(241, 237, 237);
+  border: none;
+  color: rgb(56, 144, 207);
+  font-weight: bold; 
+}
+
+.search-btn {
+  color: rgb(139, 200, 47);
+  border: 1px solid rgb(139, 200, 47);
+  padding: .5em;
+  border-radius: 10%;
 }
 
 .App-logo {
