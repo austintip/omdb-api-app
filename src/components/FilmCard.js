@@ -4,21 +4,21 @@ const FilmCard = (props) => {
 
     const [searchResults, setSearchResults] = useState([])
     useEffect(() => {
-        fetch(`http://www.omdbapi.com/?apikey=4ad5b3a7&?t=${props.title}`)
+        fetch(`http://www.omdbapi.com/?t=${props.title}&apikey=eefc24e`)
         .then(response => {
-            // response.json()
-            console.log(response)
+            response.json()
+            setSearchResults(Object.values(response))
         })
-        .then(jsonData => {
-            setSearchResults(jsonData);
-        })
+        // .then(jsonData => {
+        //     setSearchResults(jsonData);
+        // })
         .catch(error => {
             console.log(error)
         })
     }, [])
 
     return (
-        <h1>{searchResults}</h1>
+        <h1>Is this working?{searchResults}</h1>
     );
 }
 
